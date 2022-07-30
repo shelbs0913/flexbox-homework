@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flex Layout Homework</title>
+    <style>
+
+        body {
+            height: 100vh;
+        }
+
+        header, footer {
+            font-size: 40px;
+            background-color: purple;
+            color: #e7e6de;
+            height: 7%;
+        }
+        .sidebar-container{
+            background-color: gray;
+            color: #e7e6de;
+        }
+        .content {
+            background-color: black;
+            color: #e7e6de;
+            padding: 10px;
+        }
+        .box {
+            display: flex;
+            padding: 10px;
+        }
+        .sidebar-container {
+            height: 300px;
+            padding: 10px;
+        }
+        .content {
+            flex-grow: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <div class="box">
+        <div class="sidebar-container">
+            <p>Side Bar info goes here!</p>
+        </div>
+        <div class="content">
+            <p>Main Content</p>
+        </div>
+    </div>
+    <footer>Footer</footer>
+</body>
+</html>
